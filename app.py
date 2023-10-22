@@ -23,10 +23,6 @@ from price_prediction3 import get_svm_prediction
 import getting_news
 from getting_news import get_news
 
-#for web scraping
-import web_scrap
-from web_scrap import get_web
-
 #for ML models 
 import pickle
 import pickle_mixin
