@@ -99,7 +99,7 @@ if a1 == 'Explore':
     st.sidebar.image("download.png", width=100)
         
     #creating buttons in the sidebar to choose options
-    b1 = st.sidebar.radio("select option :",('Visual Representation','Dependency & Analysis','Price Prediction','Automobile News','Resolve Queries','Web Scraping'))
+    b1 = st.sidebar.radio("select option :",('Visual Representation','Dependency & Analysis','Price Prediction','Automobile News','Resolve Queries'))
     options_to_choose = ['symboling','normalized_losses','wheel_base','engine_size', 'length', 'width','height','curb_weight', 'bore', 'stroke', 'compression_ratio', 'horsepower', 'peak_rpm',
                          'city_mpg', 'highway_mpg', 'num_doors', 'num_cylinders', 'engine_size_cc',
                          'power2weight_ratio']
@@ -479,44 +479,7 @@ if a1 == 'Explore':
                     "Red , yellow and green dots depict 3 different groups, which show how the " + feature_for_segment + " and the " + feature_for_segment2 + " are available in different cars.")
 
 
-    #----6 feature - Web Scraping------
 
-    elif b1 == 'Web Scraping':
-        #calling the function where data is scraped from web
-        get_web()
-        st.markdown(f"<h1 style='background-color:#F3F781;'> Web Scraping </h1>",
-                    unsafe_allow_html=True)
-        
-        #reading web extracted data from the excel file
-        df = pd.read_excel('car_extracted_data.xlsx')
-        
-        #displaying the data and graph of the dataset
-        st.subheader("Extracted data : ")
-        st.write(df)
-        plost.bar_chart(
-            data=df,
-            bar='Name',
-            value='Rating',
-            group='value',
-            color='Name',
-            height=500,
-            legend=None)
-
-        car_options = df["Name"].unique().tolist()
-        car_selected = st.selectbox("select the car to get details : ",car_options)
-        car_rating = df[df['Name'] == car_selected].Rating
-        car_price = df[df['Name'] == car_selected].Price
-        car_mileage = df[df['Name'] == car_selected].Mileage
-        
-        #displaying the mileage,rating and price of selected car
-
-        st.subheader("Mileage - " + car_mileage.values[0])
-        st.subheader("Rating - " + str(car_rating.values[0]))
-        car_rate= car_rating.values[0]
-        average_rating = round(car_rate, 1)
-        star_rating = ":star:" * int(round(average_rating, 0))
-        st.subheader(star_rating)
-        st.subheader("Price - " + str(car_price.values[0]))
         
 #------About section of navigation menu----
 
