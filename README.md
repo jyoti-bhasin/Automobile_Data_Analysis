@@ -67,14 +67,6 @@
 > **K-Clustering Algorithm** -*It is an Unsupervised Learning algorithm, which groups the unlabeled dataset into different clusters. It allows us to cluster the data into different groups and a convenient way to discover the categories of groups in the unlabeled dataset on its own without the need for any training.*
 ![Screenshot (170)](https://user-images.githubusercontent.com/83575900/170860361-93106124-8e92-4fc7-9ff4-30d20cd867f6.png)
 
-### 6- feature
-- For adding the functionality of last feature, web scraping, we will use the requests and BeautifulSoup library of Python.
-> - **BeautifulSoup** - *It is a Python library for pulling data out of HTML and XML files.*
-> - **Requests**- *It is a library for constructing and sending HTTP requests.*
-- The data from a cars website is extracted, and all important details such as mileage, dealer name, rating, review count and price of few cars is stored in an excel sheet. 
-- Now, data from this file is displayed on the app, along with a graph between rating and name of car. Besides, a selection menu is created for the user to choose a car, and the details related to that specific car will be displayed.
-![Screenshot (171)](https://user-images.githubusercontent.com/83575900/170860375-58430ec8-5604-4d13-8c9b-fdb8cda79662.png)
-
 ### Deployment
 - After all the code is written, it is deployed on Streamlit framework, with a few changes to the code for errorfree deployment.
 > **Streamlit** - *It is an open source app framework in Python language, which helps us create beautiful web apps for data science and machine learning.*
@@ -103,9 +95,6 @@ You can resolve various queries related to automobiles such as-
 
 ### 5. Automobile News :
 - News extracted using the NewsAPI can be shown here.You can **search a keyword** related to automobiles and get access to news related to it.
-
-### 6. Web Scraping :
-- You can access and analyse data such as car name, mileage, rating, price etc , from an online car website, by scraping data from web. Also, you can *view the graph* of rating of various cars, and get details of a specific car model.
 
 ## Application of Data Analysis in Automobile Industry
 - In automobile industry, analyzed data is used to improve the customer experience, where data grouping and segmentation can lead to more *effective marketing and improved customer engagement , more targeted one‑to‑one offers* and can help the automobile industry to correctly manage the features and price of cars. 
