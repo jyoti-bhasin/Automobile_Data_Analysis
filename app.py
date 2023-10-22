@@ -64,10 +64,7 @@ a1 = navigation_options()
 if a1 == 'Home':
     st.markdown(f"<h1 style='background-color:#F6CEEC;'>AUTOMOBILE DATA ANALYSIS </h1>", unsafe_allow_html=True)
     st.image("pexels-pixabay-164634.jpg", width=400)
-    st.markdown("All those companies and activities involved in the manufacture of motor vehicles,"
-            " including most components, such as engines and bodies, but excluding tires, batteries, and fuel. "
-            " The industry’s principal products are passenger automobiles and light trucks, including pickups, vans, and sport utility vehicles."
-            " The history of the automobile industry, though brief compared with that of many other industries, has exceptional interest because of its effects on history from the 20th century."
+    st.markdown("In today's automotive industry, data is the driving force behind informed decisions, increased efficiency, and superior customer experiences. Whether you're an auto manufacturer, dealership, or aftermarket service provider, understanding your data can make all the difference."
             "\n\n Lets analyze the automotive industry and grow.")
     col1, col2 = st.columns(2)
     with col1:
