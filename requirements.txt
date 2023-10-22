@@ -1,0 +1,16 @@
+api==0.0.7
+beautifulsoup4==4.11.1
+matplotlib==3.5.2
+numpy==1.21.6
+pandas==1.2.5
+pickle_mixin==1.0.2
+Plost==0.2.5
+plotly==5.7.0
+requests==2.27.1
+scikit_learn
+seaborn==0.11.2
+streamlit==1.9.0
+streamlit_option_menu==0.3.2
+protobuf~=3.19.0
+openpyxl==3.0.10
+workbook==1.1
